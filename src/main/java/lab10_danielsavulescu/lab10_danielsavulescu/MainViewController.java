@@ -18,7 +18,7 @@ import javafx.scene.control.RadioMenuItem;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.KeyCombination;
 import javafx.scene.input.MouseButton;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.BorderPane;
 
 /**
  * FXML Controller class
@@ -28,7 +28,7 @@ import javafx.scene.layout.Pane;
 public class MainViewController implements Initializable {
 
     @FXML
-    private Pane mainPane;
+    private BorderPane mainPane;
     @FXML
     private MenuItem newItem;
     @FXML
@@ -84,7 +84,7 @@ public class MainViewController implements Initializable {
         System.out.println("NEW has been pressed");
         newItem.setDisable(true);
         openItem.setDisable(true);
-        closeItem.setDisable(true);
+        closeItem.setDisable(false);
     }
 
     @FXML
